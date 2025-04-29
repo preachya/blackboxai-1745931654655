@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokhara Rent Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Pokhara Rent Hub</h1>
+            <nav class="space-x-6 text-gray-700">
+                <a href="#" class="hover:text-blue-600 transition">Home</a>
+                <a href="#" class="hover:text-blue-600 transition">Listings</a>
+                <a href="#" class="hover:text-blue-600 transition">About</a>
+                <a href="#" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold mb-4">Find Your Perfect Rental in Pokhara</h2>
+            <p class="text-gray-600 mb-6">Search from a wide range of properties available for rent.</p>
+            <form class="max-w-xl mx-auto flex items-center space-x-4">
+                <input type="text" placeholder="Search by location, property type..." class="flex-grow px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Search</button>
+            </form>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-6">Featured Listings</h3>
+            <div id="listings-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Dynamic property cards will be inserted here by app.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t mt-12">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+            <p>© 2024 Pokhara Rent Hub. All rights reserved.</p>
+            <div class="space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
